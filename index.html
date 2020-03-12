@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Todays work">
+    <meta name="keywords" content="MTHS, website">
+    <meta name="author" content="Nam Dinh">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title>Todays work</title>
+      <script src="index.js"></script>
+  </head>
+  <body id="bkcolor">
+    <h1>Todays work with JavaScript, Flowchart, storyboard, and Textbox.</h1>
+    Name: <input type="text" id="textb" value="type whatever here">
+    <script>
+      function sendTextToAlert() {
+        alert (document.getElementById("textb").value);
+      }
+    </script>
+    <button id="bt1" onclick="sendTextToAlert()">Submit</button>
+    <script>
+    document.getElementById('bt1').addEventListener("click", "functName()");
+    </script>
+    <p>This is the daily assignement of Unit 2-04</p>
+    <br>
+    <button type="button" onclick="backgroundColor()">Click to change background color</button>
+    <script>
+     function backgroundColor() {
+    document.getElementById('bkcolor').style.backgroundColor="red";
+     }
+    </script>
+  </body>
+</html>
